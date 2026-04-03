@@ -226,3 +226,14 @@ Request
 **Password Security** — Passwords are hashed with bcrypt (12 rounds). The password field uses `select: false` so it is never returned in any query response.
 
 **Admin Self-Protection** — Admins cannot deactivate or delete their own account to prevent accidental lockout.
+
+---
+
+
+## Assumptions
+
+- **Default role is Viewer** — users registered via `/api/auth/register` are assigned the `viewer` role by default. Only an Admin can promote a user to `analyst` or `admin`.
+- **Viewers cannot access dashboard summaries** — Viewers can read financial records, but dashboard analytics (summary, trends, categories) are restricted to Analyst and Admin only.
+- **Soft delete only** — records are never permanently removed, preserving audit trails which are critical in finance systems.
+- **Single currency assumed** — amounts are stored as plain numbers with no currency field, assuming a single-currency environment.
+- **Admin manages roles** — users cannot change their own role. Role assignment is an Admin-only action via `PUT /api/users/:id`.
