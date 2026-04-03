@@ -241,3 +241,6 @@ Request
 - ---
 Live API: https://finance-backend-d5u3.onrender.com
 API Docs: https://finance-backend-d5u3.onrender.com/api-docs
+
+##Note: This API is deployed on Render's free tier. 
+It may take 30-60 seconds to wake up after inactivity.
