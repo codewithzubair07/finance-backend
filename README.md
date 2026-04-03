@@ -160,8 +160,8 @@ MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/finan
 ```json
 POST /api/auth/register
 {
-  "name": "John Doe",
-  "email": "john@example.com",
+  "name": "Juber",
+  "email": "juber@example.com",
   "password": "secret123",
   "role": "viewer"
 }
@@ -171,7 +171,7 @@ POST /api/auth/register
 ```json
 POST /api/auth/login
 {
-  "email": "john@example.com",
+  "email": "juber@example.com",
   "password": "secret123"
 }
 ```
