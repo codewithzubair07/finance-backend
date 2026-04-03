@@ -237,3 +237,7 @@ Request
 - **Soft delete only** — records are never permanently removed, preserving audit trails which are critical in finance systems.
 - **Single currency assumed** — amounts are stored as plain numbers with no currency field, assuming a single-currency environment.
 - **Admin manages roles** — users cannot change their own role. Role assignment is an Admin-only action via `PUT /api/users/:id`.
+
+- ---
+Live API: https://finance-backend-d5u3.onrender.com
+API Docs: https://finance-backend-d5u3.onrender.com/api-docs
